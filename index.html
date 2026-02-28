@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wi>dth=device-width, initial-scale=1.0">
+    <title>World Tourism Places</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white; 
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+          header {
+            position:fixed;
+            top: 0;
+            width: 100%;
+            height: 115px;
+            background-color: #0077b6;
+            color: white;
+            display: flex;
+            justify-content: center;   
+            align-items: center;     
+            z-index: 1000;
+            font-size: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            
+        }
+
+        .content {
+            padding-top: 120px;
+            text-align: center;
+            color: #0077b6;
+        }
+
+        .content p {
+            font-size: 18px;
+            width: 70%;
+            margin: auto;
+        }
+
+        .places {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .place-card {
+            background: whitesmoke;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.4s;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .place-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .place-card:hover {
+            transform: scale(1.05);
+        }
+
+        .place-card h3 {
+            margin: 10px 0 5px 0;
+        }
+
+        .place-card p {
+            font-size: 15px;
+            padding: 0 10px;
+            color: black;
+        }
+
+        .button-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            font-size: 20px;
+            background-color:#0077b6 ;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: green;
+            color: white;
+        }
+
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px) {
+            .places {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌍 WORLD TOURISM PLACES</h1>
+</header>
+
+<div class="content">
+    <h2>Explore The Beauty of the World</h2>
+    <p>Traveling around the world gives us unforgettable memories and experiences.
+        Here are some of the most famous tourist destinations you must visit once in your lifetime.
+    </p>
+</div>
+
+<div class="places">
+
+    <div class="place-card">
+        <img src="./internship/img1.jpg" alt="dubai">
+        <h3>Dubai</h3>
+        <p>Dubai is a dazzling city in the United Arab Emirates where modern luxury meets rich Arabian tradition.</p>
+    </div>
+
+    <div class="place-card">
+        <img src="./internship/img2.jpg" alt="paris">
+        <h3>Paris</h3>
+        <p>Paris is the capital city of France and one of the most beautiful and romantic cities in the world. The city that never sleeps.
+    </div>
+
+    <div class="place-card">
+        <img src="./internship/img3.jpg" alt="Switzerland">
+        <h3>Switzerland</h3>
+        <p>Switzerland is a beautiful country in Central Europe known for its stunning Alps. It is famous for its natural scenery.</p>
+    </div>
+
+    <div class="place-card">
+        <img src="./internship/img4.jpg" alt="New york">
+        <h3>New York</h3>
+        <p>New York City is the largest city in the United States and one of the world's most exciting and diverse destinations..</p>
+    </div>
+
+    <div class="place-card">
+        <img src="./internship/img5.jpg" alt="Maldives">
+        <h3>Maldives</h3>
+        <p>The Maldives is a beautiful island nation in the Indian Ocean, famous for its crystal-clear waters, white sandy beaches, and luxury overwater villas. .</p>
+    </div>
+
+    <div class="place-card">
+        <img src="./internship/img6.jpg" alt="bali">
+        <h3>Bali</h3>
+        <p>Bali is a beautiful island province of Indonesia known for its stunning beaches, lush green rice terraces, and rich cultural heritage. Often called the “Island of the Gods.</p>
+    </div>
+
+</div>
+
+<div class="button-section">
+    <button class="btn" onclick="showMessage()">Click to Explore</button>
+</div>
+
+<footer>
+    <p>© 🌍 World Tourism | Designed for Travel Lovers </p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("Welcome! Let's explore the beautiful places of the world 🌍");
+    }
+</script>
+
+</body>
+</html>
